@@ -73,10 +73,10 @@ void app_main(void)
         /* Queue was not created and must not be used. */
         printf("Queue not created\n");
     }else{
-    xTaskCreate(task_1,"task1",2048,NULL,1,NULL);
-    xTaskCreate(task_2,"task2",2048,NULL,1,NULL);
-    xTaskCreate(task_3,"task3",2048,NULL,1,NULL);
-    xTaskCreate(task_4,"sender",1024,NULL,1,NULL);
-    xTaskCreate(task_5,"reciever",2048,NULL,1,NULL);
+   xTaskCreate(task_1,"task1",2048,NULL,5,NULL);
+    xTaskCreate(task_2,"task2",2048,NULL,6,NULL);
+    xTaskCreate(task_3,"task3",2048,NULL,7,NULL);
+    xTaskCreate(task_4,"sender",1024,NULL,8,NULL);
+    xTaskCreate(task_5,"reciever",2048,NULL,9,NULL);
     }
 }
